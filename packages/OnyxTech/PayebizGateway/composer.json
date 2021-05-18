@@ -1,0 +1,41 @@
+{
+    "name": "onyxtech/payebizgateway",
+    "description": "A module for payment-gateways integration in Laravel",
+    "license": "onyxtech2021",
+    "authors": [
+        {
+            "name": "onyxtech",
+            "email": "info@onyxtech.co.uk",
+            "homepage": "www.onyxtech.co.uk"
+        }
+    ],
+    "homepage": "https://github.com/omarbhatti999/payebizgateway",
+    "keywords": ["Laravel", "PayebizGateway"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "OnyxTech\\PayebizGateway\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OnyxTech\\PayebizGateway\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnyxTech\\PayebizGateway\\PayebizGatewayServiceProvider"
+            ],
+            "aliases": {
+                "PayebizGateway": "OnyxTech\\PayebizGateway\\Facades\\PayebizGateway"
+            }
+        }
+    }
+}
